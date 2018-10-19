@@ -10,6 +10,10 @@
   box-shadow: 0rem 0rem 5px 3px rgba(0, 0, 0, 0.25);
 }
 
+#navbar-brand {
+  color: white !important;
+}
+
 .fas,
 .fab {
   color: #ff922b;

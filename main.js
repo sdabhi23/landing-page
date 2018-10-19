@@ -33,6 +33,11 @@ const sendMail = () => {
     body: formData
   })
     .then(res => res.json())
-    .catch(error => alert("Error:", error)) //alert("There's some error submitting the form. Please try again after some time!")
-    .then(response => alert("Success:", response)); //alert("Hey, I just received your email, and will surely get back to you as soon as possible!")
+    .catch(error => alert("There's some error submitting the form. Please try again after some time!"))
+    .then(response => {
+      alert("Hey, I just received your email, and will surely get back to you as soon as possible!");
+      $("#email").val("");
+      $("#subject").val("");
+      $("#message").val("");
+    });
 };
